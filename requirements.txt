@@ -1,0 +1,6 @@
+scrapy
+django
+scrapy-djangoitem
+psycopg2-binary
+celery
+redis
