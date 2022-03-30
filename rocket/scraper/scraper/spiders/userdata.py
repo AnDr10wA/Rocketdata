@@ -5,12 +5,9 @@ class UserDataSpider(scrapy.Spider):
     name = 'userdata'
     allowed_domains = ['github.com']
 
-    def __init__(self, link):
-        self.url = link
-        print('this is messege')
-        print(self.url)
 
-        self.start_urls = [self.url]
+
+    start_urls = ['https://github.com/celery']
 
 
 
@@ -61,23 +58,6 @@ class UserDataSpider(scrapy.Spider):
 
 
 
-        yield  repo_item
+        yield repo_item
 
-
-
-        #     {
-        #     'name_repo': name_repo,
-        #     'about': about,
-        #     'link_site': link_site,
-        #     'stars': stars,
-        #     'forks': forks,
-        #     'watching': watching,
-        #     'commits': commits,
-        #     'commit_autor': commit_autor,
-        #     'commitname': " ".join(commit_name),
-        #     'commit_date': commit_date,
-        #     'releases' : releases,
-        #     'releases_version': releases_version,
-        #     'releases_date': releases_date
-        # }
 

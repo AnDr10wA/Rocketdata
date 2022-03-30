@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'gitparse',
     'scraper',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [

@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <h1>Hello World</h1>
- <form action="" method="post">
-     {% csrf_token %}
-  {{form}}
-  <p><input type="submit" value="Отправить"></p>
- </form>
+    {% for i in data %}
+    {{i}}</br>
+    {% endfor %}
+<!-- <form action="" method="post">-->
+<!--     {% csrf_token %}-->
+<!--  {{form}}-->
+<!--  <p><input type="submit" value="Отправить"></p>-->
+<!-- </form>-->
 </head>
 <body>
 
