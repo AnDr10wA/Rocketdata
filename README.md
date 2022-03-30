@@ -26,6 +26,6 @@ start_urls в файле scraper/scraper/spiders/userdata
 
 localhost:8000/gitlink/project - апи получения ссылок на страницы пользователей
 localhost:8000/gitlink/repos/<str:project> - апи получения репозиториев пользователя
-localhost:8000/gitlink/stats/celery - апи получения общей статистики
+localhost:8000/gitlink/stats - апи получения общей статистики
 localhost:8000/gitlink/statsone/<str:project> -апи получения статистики по одному пользователю
 Вместо <str:project> - указать имя проекта
